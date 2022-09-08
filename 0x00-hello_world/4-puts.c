@@ -1,4 +1,3 @@
-#!/bin/bash
 #Include <stdio.h>
 /**
  * main - entry point
