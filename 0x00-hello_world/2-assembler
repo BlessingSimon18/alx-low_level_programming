@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S export $CFILE="2-main.c" o- $CFILE.s
+gcc s $CFILE
