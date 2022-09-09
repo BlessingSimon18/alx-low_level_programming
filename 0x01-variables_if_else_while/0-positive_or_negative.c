@@ -5,12 +5,15 @@
 /*
  * main - prints if number is positive, zero or negative
  *
+ * Description: using the main function
+ * this program prints "Programming is positive, zero or negative"
+ *
  * Return: Always (Success)
  */
 
 int main(void)
 {
-	int n;	
+	int n;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
@@ -20,10 +23,13 @@ int main(void)
 		printf("%d is positive\n", n);
 	}
 	else if (n == 0)
-	{                                                                                       printf("%d is zero\n", n);                                              
+	{
+		printf("%d is zero\n", n);
 	}
-	else if (n < 0)                                                                 {	
-		printf("%d is negative\n", n);                                    	}
+	else if (n < 0)
+	{
+		printf("%d is negative\n", n);
+	}
 
 	return (0);
 }
