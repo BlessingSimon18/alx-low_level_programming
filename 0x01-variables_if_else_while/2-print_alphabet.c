@@ -2,14 +2,14 @@
 /**
  * main - entry point
  *
- * Return: Always (success)
+ * Return: always return 0
  */
 
 int main(void)
 {
 	char c;
 
-	for (c - 'a'; c <= 'z'; c++)
+	for (c = 'a'; c <= 'z'; c++)
 		putchar(c);
 
 	putchar('\n');
