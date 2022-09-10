@@ -3,20 +3,20 @@
 /**
  * main - entry point
  *
- * Return: Always (Success)
+ * Return: Always return 0
  */
 int main(void)
 {
-	int c;
+	int i;
 
-	for (c = '0'; c <= '9'; c++)
+	for (i = 10; i <20; i++)
 	{
-		putchar(c);
+		putchar((i % 10) + '0');
 
-		if (c != '9')
+		if (i != 19)
 		{
 			putchar(',');
-			putchar('');
+			putchar(' ');
 		}
 	}
 
