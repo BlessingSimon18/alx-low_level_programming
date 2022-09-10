@@ -3,20 +3,20 @@
 /**
  * main - entry point
  *
- * Return: Always (Success)
+ * Return: Always return 0
  */
 int main(void)
 {
-	char c;
+	char a;
 
-	for (c = 'a'; c <= 'z'; c++)
+	for (a = 'a'; a <= 'z'; a++)
 	{
-		putchar(c);
+		putchar(a);
 	}
 
-	for (c = 'A'; c <= 'Z'; c++)
+	for (a = 'A'; a <= 'Z'; a++)
 	{
-		putchar(c);
+		putchar(a);
 	}
 
 	putchar('/n');
