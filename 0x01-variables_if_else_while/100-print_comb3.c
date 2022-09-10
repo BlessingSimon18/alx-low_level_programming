@@ -3,25 +3,26 @@
 /**
  * main - entry point
  *
- * Return: returns zero at the end
+ * Return: always return 0
  */
 
 int main(void)
 {
 	int i, j;
 
-	for (i = 0; i <= 9; i++)
+	for (i = '0'; i <= '9'; i++)
 	{
-		for (j = 1; j <= 9; j++)
+		for (j = '0'; j <= '9'; j++)
 		{
-			if (j > i)
+			if (i > j)
 			{
-				putchar(i + '0');
-				putchar(j + '0');
-				if (i != 8)
+				putchar(i);
+				putchar(j);
+
+				if (i != '8' || (i == '8' && j != '9'))
 				{
 					putchar(',');
-					putchar('');
+					putchar(' ');
 				}
 			}
 		}
