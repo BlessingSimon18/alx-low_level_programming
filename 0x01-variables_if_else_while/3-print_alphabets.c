@@ -3,7 +3,7 @@
 /**
  * main - entry point
  *
- * Return: Always return 0
+ * Return: always return 0
  */
 int main(void)
 {
@@ -19,7 +19,7 @@ int main(void)
 		putchar(a);
 	}
 
-	putchar('/n');
+	putchar('\n');
 
 	return (0)
 }
