@@ -3,15 +3,23 @@
 /**
  * main - entry point
  *
- * Return: Always (Success)
+ * Return: Always return 0
  */
 int main(void)
 {
-	char c;
+	unsigned char a = '0';
+	int i;
 
-	for (c = '0'; c <= '9'; c++)
+	for (i = 0 i < 10; i++)
 	{
-		putchar(c);
+		putchar(a);
+		a++;
+	}
+	a = '1';
+	for (i = 0; i < 6; i++)
+	{
+		putchar('0' + a);
+		a++;
 	}
 
 	putchar('\n');
