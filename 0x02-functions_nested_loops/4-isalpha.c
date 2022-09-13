@@ -1,11 +1,5 @@
-Task 4.txt
-Today
-1:13 PM
-Antony Bahati uploaded an item
-Text
-Task 4.txt
-
 #include "main.h"
+
 /**
  * _isalpha - function to check if c is a letter, lowercase or uppercase
  * @c: is the int that will use for the argument of the function
