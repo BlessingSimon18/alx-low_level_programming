@@ -1,69 +1,27 @@
-#include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include "main.h"
 
 /**
  * main - entry point
  *
- * key_gen - password generator
- *
- * @N: length of the password
- *
+ * Return: generated password
  */
-
-void key_gen(int N)
-{
-	int i;
-	int r;
-
-	srand((unsigned int)(time(NULL)));
-
-	char numbers[] = "0123456789";
-	char letter[] = "abcdefghijklmnoqprstuvwyzx";
-	char LETTER[] = "ABCDEFGHIJKLMNOQPRSTUYWVZX";
-	char symbols[] = "!@#$^&*?";
-
-	char password[N];
-
-	r = rand() % 4;
-
-	for (i = 0; i < N; i++)
-	{
-		if (r == 1)
-		{
-			password[i] = numbers[rand() % 10];
-			r = rand() % 4;
-			printf("%c", password[i]);
-		}
-		else if (r == 2)
-		{
-			password[i] = symbols[rand() % 8];
-			r = rand() % 4;
-			printf("%c", password[i]);
-		}
-		else if (r == 3)
-		{
-			password[i] = LETTER[rand() % 26];
-			r = rand() % 4;
-			printf("%c", password[i]);
-		}
-		else
-		{
-			password[i] = letter[rand() % 26];
-			r = rand() % 4;
-			printf("%c", password[i]);
-		}
-	}
-}
-
-
 
 int main(void)
 {
-	int N = 12;
+	int pass, sum;
 
-	key_gen(N);
+	srand(time(NULL));
+	sum = 0;
+	while (sum <= 2645)
+	{
+		pass = (rand() % 128);
+		sum += pass;
+		printf("%c", pass);
+	}
+	printf("%c", 2772 - sum);
 
 	return (0);
 }
