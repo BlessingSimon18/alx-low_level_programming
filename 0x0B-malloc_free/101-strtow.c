@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * strtow - counts the number of words
+ * count_word - counts the number of words
  * @s: string to evaluate
  *
  * Return: number of words
