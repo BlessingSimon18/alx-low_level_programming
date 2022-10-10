@@ -1,5 +1,5 @@
-#ifndef STRTYP
-#define STRTYP
+#ifndef DOG_H
+#define DOG_H
 
 /**
  * struct dog - structure of a dog.
@@ -21,4 +21,4 @@ void print _dog(struct dog *d);
 dog_t *new_dog(char *name, float age, char *owner);
 void free_dog(dog_t *d);
 
-#endif /*STRTYP*/
+#endif /*DOG_H*/
